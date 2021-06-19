@@ -17,5 +17,12 @@ def calculateAge():
     birthDate = date(int(yearEntry.get())),
     int(monthEntry.get()), int(dayEntry.get())
     age = today.year - birthDate.year - ((today.month,today.day) < (birthDate.month, birthDate.day))
+
     Label(text=f"{nameValue.get()} your age is {age}").grid(row = 6, column = 1)
+    Label(text="Name").grid(row=1, column=0, padx=90)
+    Label(text="Year").grid(row=2, column=0)
+    Label(text="Month").grid(row=3, column=0)
+    Label(text="Date").grid(row=4, column=0)
+
+
 
