@@ -25,4 +25,32 @@ def calculateAge():
     Label(text="Date").grid(row=4, column=0)
 
 
+    nameValue = StringVar()
+    yearValue = StringVar()
+    monthValue = StringVar()
+    dayValue = StringVar()
+
+
+    nameEntry = Entry(gui, textvariable = nameValue)
+    yearEntry = Entry(gui, textvariable= yearValue)
+    monthEntry = Entry(gui, textvariable= monthValue)
+    dayEntry = Entry(gui, textvariable= dayValue)
+
+
+    nameEntry.grid(row=1, coloumn=1, pady=10)
+    yearEntry.grid(row=1, coloumn=1, pady=10)
+    monthEntry.grid(row=1, coloumn=1, pady=10)
+    dayEntry.grid(row=1, coloumn=1, pady=10)
+
+
+    Button(text="Calculate age", command=calculateAge).grid(row=5, coloumn=1, pady=10)
+
+
+    gui.mainloop()
+
+
+
+
+
+
 
